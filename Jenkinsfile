@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'devnode1' }
+    agent { label 'agent-1' }
     
     environment {
         REGISTRY = 'harbor.avalanche.rid-intrasoft.eu'
-        COMPONENT = 'demo-code'
+        COMPONENT = 'demo'
         REGISTRY_IMAGE = "${REGISTRY}/${COMPONENT}/${COMPONENT}"
         DOCKERFILE_PATH = 'Dockerfile'
         CURRENT_BUILD_NUMBER = "${currentBuild.number}"
