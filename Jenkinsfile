@@ -2,7 +2,7 @@ pipeline {
     agent { label 'agent-1' }
     
     environment {
-        REGISTRY = 'harbor.avalanche.rid-intrasoft.eu'
+        REGISTRY = 'harbor.testabc.rid-intrasoft.eu'
         COMPONENT = 'demo'
         REGISTRY_IMAGE = "${REGISTRY}/${COMPONENT}/${COMPONENT}"
         DOCKERFILE_PATH = 'Dockerfile'
